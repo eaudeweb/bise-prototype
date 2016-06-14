@@ -1,0 +1,27 @@
+.icon-slide-right() {
+  text-indent: 0;
+  transition+: text-indent 100ms;
+  &:hover,
+  &:focus {
+    text-indent: 1em;
+  }
+}
+
+.animated {
+  animation-duration: 500ms;
+  animation-fill-mode: both;
+}
+
+@keyframes shake {
+  from, to {
+    transform: translate3d(0, 0, 0);
+  }
+
+  20%, 60% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  40%, 80% {
+    transform: translate3d(10px, 0, 0);
+  }
+}

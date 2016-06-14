@@ -1,0 +1,250 @@
+---
+layout: base
+page: catalog
+breadcrumbs: 
+  - BISE Catalogue
+fieldsets:
+  - name: Categories
+    fields:
+      - Documents
+      - Links
+      - Web Pages
+      - Species Info
+      - Habitat Types Info
+      - Sites Info
+  - name: Source Dataset
+    fields:
+      - CDDA_NATIONAL
+      - NATURA2000
+      - DIPLOMA
+    count: 10000
+  - name: Country
+  - name: Biogeographical Region
+  - name: Language
+  - name: Species Group
+  - name: Taxonomic Rank
+  - name: Genus
+  - name: Published Year
+  - name: Biodiversity Strategy Targets
+
+searchResults:
+  - title: EU 2010 Biodiversity Baseline
+    date: Oct 19, 2010
+    source: MAES Library
+
+  - title: Valuing Ecosystem Services for Sustainable Landscape Planning in Alpine Regions
+    date: May 15, 2010
+    source: MAES Library
+
+  - title: Assessing biodiversity in Europe — the 2010 report
+    date: Oct 4, 2010
+    source: MAES Library
+
+  - title: The territorial dimension of environmental sustainability – Potential territorial indicators to support the environmental dimension of territorial cohesion
+    date: Jul 5, 2010
+    source: Green Infrastructure Library
+
+  - title: 'Territorial cohesion and water management in Europe: the spatial perspective'
+    date: Aug 24, 2012
+    source: Green Infrastructure Library
+
+  - title: 'Biodiversity — SOER 2010 thematic assessment'
+    date: Nov 28, 2010
+    source: MAES Library
+
+  - title:  'Streamlining European biodiversity indicators 2020: Building a future on lessons learnt from the SEBI 2010 process'
+    date: Sep 19, 2010
+    source: MAES Library
+
+  - title: 'Example: Search result title'
+    date: Publishing date
+    source: Source
+      
+---
+
+<header class="page-header">
+
+    <div class="container">
+      {% include breadcrumbs.html %}
+      <h1 class="page-title">
+        <img src="{{ site.static }}/img/img-bise-catalogue-symbol.png" 
+             alt="BISE Catalogue logo"
+             height="72" width="120">
+        BISE Catalogue
+      </h1>
+      <p class="page-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit vel id nisi consequatur, quos veniam ad provident dignissimos laboriosam mollitia autem magni vitae est. Quisquam tempore delectus maiores dolorum tempora!</p>
+      <form action="" class="leading">
+
+        <div class="field field-block field-search" id="bise-catalog-search-field">
+          <span class="input">
+            <label class="input-addon muted no-br" for="bise-catalog">
+              Search BISE Catalog
+            </label>
+            <span class="input-element">
+              <input type="search" id="bise-catalog">
+            </span>
+            <button class="input-btn btn-yellow" type="submit">
+              <span class="uppercase">Search</span>
+            </button>
+          </span>
+        </div>
+
+
+      </form>
+      <nav class="tabmenu">
+        <ul class="tabmenu-tabs">
+          <li>
+            <span class="active">All Libraries</span>
+          </li>
+          <li>
+            <a href="#">EUNIS</a>
+          </li>
+          <li>
+            <a href="#">Green Infrastructure Library</a>
+          </li>
+          <li>
+            <a href="#">BISE</a>
+          </li>
+          <li>
+            <a href="#">MAES Library</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+</header>
+<div class="page-body">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-md-8">
+        <main>
+          <div id="bise-catalog-card" class="card">
+            <div class="listing">
+              <header class="listing-header">
+                <div class="leading clear">
+                  <span class="align-to-field">409408 results</span>
+                  <span class="float-right">
+                    <span class="field field-select field-no-border">
+                      <span class="input">
+                        <label for="results-per-page" class="input-addon">Results per page</label>
+                        <span class="input-element">
+                          <select id="results-per-page">
+                            <option>10</option>
+                            <option>25</option>
+                            <option>50</option>
+                          </select>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              </header>
+              <ul class="listing-body">
+                {% for result in page.searchResults %}
+                <li class="listing-item">
+                  
+                  <div class="search-result">
+                    <div class="search-result-thumbnail">
+                      <img src="" alt="Thumbnail" width="60" height="60">
+                    </div>
+                    <div class="search-result-body">
+                      <h4 class="search-result-title"><a href="#">{{ result.title }}</a></h4>
+                      <div>
+                        <strong>{{ result.type | default: 'Document '}}</strong> |
+                        <time title="Published on Oct 19, 2010">{{ result.date }}</time>
+                      </div>
+                      <span class="search-result-source">Source: {{ result.source }}</span>
+                    </div>
+                  </div>
+
+                </li>
+                {% endfor %}
+              </ul>
+              <footer class="listing-footer">
+
+                <div class="pagination">
+                  <div class="pagination-pager">
+                    <a href="#" class="pagination-next">Next</a>
+                    <span class="pagination-prev">Previous</span>
+                  </div>
+                  <ul class="pagination-pages">
+                    <li>
+                      <a href="#">1</a>
+                    </li>
+                    <li>
+                      <span>&hellip;</span>
+                    </li>
+                    <li>
+                      <a href="#">5</a>
+                    </li>
+                    <li>
+                      <a href="#">6</a>
+                    </li>
+                    <li>
+                      <span class="active">7</span>
+                    </li>
+                    <li>
+                      <a href="#">8</a>
+                    </li>
+                    <li>
+                      <a href="#">9</a>
+                    </li>
+                    <li>
+                      <span>&hellip;</span>
+                    </li>
+                    <li>
+                      <a href="#">214</a>
+                    </li>
+                  </ul>
+                </div>
+
+              </footer>
+            </div>
+            </div>
+          </main>
+        </div>
+
+        <div class="col-md-4">
+          <aside>
+          
+            <form action="">
+              
+              <h4>Filter Results</h4>
+              {% for fieldset in page.fieldsets %}
+                <fieldset class="facet">
+                  <header class="facet-header">
+                    <h5 class="facet-title">{{ fieldset.name }}</h5>
+                    <button class="facet-toggle" type="button">
+                      {% if fieldset.fields %}
+                      <span class="icon icon-arrow_drop_up"></span>
+                      {% else %}
+                      <span class="icon icon-arrow_drop_down"></span>
+                      {% endif %}
+                    </button>
+                  </header>
+                  {% if fieldset.fields %}
+                  <div class="facet-body">
+                    {% for field in fieldset.fields %}
+                    <span class="field field-block field-checkbox">
+                      <span class="input"> <input type="checkbox" id="{{ field | lowercase }}"> </span>
+                      <label class="field-label" for="{{ field | lowercase }}">
+                        {{ field }}
+                      </label>
+                      {% if fieldset.count %}
+                        <span class="field-count">{% random 50:100 %}</span>
+                      {% endif %}
+                    </span>
+                    {% endfor %}
+                  </div>
+                  {% endif %}
+                </fieldset>
+              {% endfor %}
+
+            </form>
+          </aside>
+        </div>
+      
+    </div>
+  </div>
+</div>

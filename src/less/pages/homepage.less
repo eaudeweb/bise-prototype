@@ -1,0 +1,130 @@
+.page-homepage {
+  .navitem-description {
+    display: block;
+  }
+}
+
+#intro {
+  padding: 2rem;
+  margin: -@card-padding;
+  margin-bottom: 0;
+  background-color: @color-blue;
+  color: #fff;
+  h1 {
+    color: inherit;
+  }
+  a {
+    color: @color-yellow;
+  }
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+#highlights {
+  // margin-top: -3rem;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.section-title {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section-header {
+  margin-bottom: @leading-xlarge;
+}
+
+#news {
+  .listing-title {
+    color: @color-teal;
+  }
+  .listing-item {
+    h4 {
+      margin-top: 0;
+    }
+  }
+}
+
+#card-flagship-products {
+  padding: 2rem;
+  background-color: @color-yellow;
+}
+
+#card-bise-catalogue {
+  background-color: #243A52; // @color-lightblue;
+  color: #fff;
+  h3, h4, h5 {
+    color: inherit;
+  }
+  img {
+    .utils > .img-width;
+  }
+}
+
+
+#homepage-carousel {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  position: relative;
+  // border: 2px solid @color-soft;
+  // padding: @rem-x-large;
+  border-radius: @radius;
+  .slick-arrow {
+    .utils > .no-btn;
+    position: absolute;
+    top: 50%;
+    font-size: 2rem;
+    line-height: 1;
+    margin-top: -1rem;
+    .utils > .square(2rem);
+    overflow: hidden;
+    color: @color-soft;
+    &:hover,
+    &:focus {
+      color: @color-body;
+    }
+  }
+
+  .slick-next {
+    left: 100%;
+    margin-left: .5rem;
+    &::before {
+      .icon;
+      content: @icon-navigate_next;
+    }
+  }
+  .slick-prev {
+    right: 100%;
+    margin-right: .5rem;
+    &::before {
+      .icon;
+      content: @icon-navigate_before;
+    }
+  }
+
+  .slide {
+    margin: .5rem;
+    box-shadow: 0 1px 4px fade(#000, 25%);
+  }
+
+  .slide-media {
+    img {
+      .utils > .img-width;
+    }
+  }
+
+  .slide-body {
+    padding: @rem-x-xlarge;
+  }
+}

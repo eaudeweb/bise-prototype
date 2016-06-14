@@ -1,0 +1,16 @@
+<nav id="breadcrumbs">
+  <ul class="breadcrumbs">
+    <li>
+      <a href="{{ site.baseurl }}/">BISE</a>
+    </li>
+    {% for breadcrumb in page.breadcrumbs %}
+      <li>
+      {% if forloop.last %}
+        <strong>{{ breadcrumb }}</strong>
+      {% else %}
+        <a href="#">{{ breadcrumb }}</a>
+      {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

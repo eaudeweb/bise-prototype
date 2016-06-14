@@ -1,0 +1,30 @@
+@message-padding-v: 1em;
+@message-padding-h: 1em;
+
+  // =>
+  @message-padding: @message-padding-v @message-padding-h;
+
+.message {
+  padding: @message-padding;
+}
+
+// .message.message-error {
+//   .theme-body(red, true);
+//   .theme-typography(red, true);
+//   .theme-buttons(red, true);
+// } 
+// .message.message-warning {
+//   .theme-body(yellow, true);
+//   .theme-typography(yellow, true);
+//   .theme-buttons(yellow, true);
+// }
+// .message.message-info {
+//   .theme-body(lightblue, true);
+//   .theme-typography(lightblue, true);
+//   .theme-buttons(lightblue, true);
+// }
+// .message.message-success {
+//   .theme-body(green, true);
+//   .theme-typography(green, true);
+//   .theme-buttons(green, true);
+// }

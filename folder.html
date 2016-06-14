@@ -1,0 +1,46 @@
+---
+layout: base
+page: folder
+breadcrumbs:
+  - Folder
+  - Page
+---
+
+<div class="page-body">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9 col-lg-10 col-md-push-3 col-lg-push-2">
+        <main>
+
+          <article class="article">
+            <header class="article-header">
+              {% include breadcrumbs.html %}
+              <h1 class="article-title">Topics</h1>
+            </header>
+            <div class="article-body">
+              <p>Welcome to the Topics section of the Biodiversity Information System for Europe.</p>
+              <p>Biodiversity encompasses the richness of life and the diverse patterns it forms. It is usually considered as the diversity within <strong>species</strong>, <strong>between species</strong> and of <strong>ecosystems</strong>. Here you can find information on the <strong>state and trend </strong>of the different components of biodiversity, on <strong>threats</strong> and <strong>impacts</strong>, as wells as on <strong>benefits </strong>of<strong> </strong>ecosystem services for human well-being and on instruments implemented (<strong>responses</strong>) in order to stop the loss of biodiversity and to conserve nature.</p>
+              <p>The following <strong>flagship projects</strong> provide important information and knowledge in order to support the decision process at European level. They deal with different aspects like the <strong>2015 mid term review of implementing the EU biodiversity strategy to 2020</strong> (MTR), <strong>indicators</strong> (SEBI), the <strong>baseline data</strong>, the <strong>mapping and assessment of ecosystems and ecosystem services</strong> (MAES),<strong> </strong>the <strong>economics of</strong><strong> </strong><strong>ecosystems and biodiversity</strong> (TEEB) or provide an overall view on the <strong>state of the environment</strong> in Europe (SOER).</p>
+              <ul>
+                <li><a class="external-link externalLink" href="http://www.eea.europa.eu//publications/eu-2010-biodiversity-baseline-revision" target="_self" title="">EU 2010 biodiveristy baseline - adopted to the MAES typology (2015)</a></li>
+                <li><a title="" href="http://biodiversity.europa.eu/topics/sebi-indicators" class="internal-link" target="_self">10 Messages for Biodiversity - SEBI Indicators</a></li>
+                <li><a class="external-link externalLink" href="http://www.eea.europa.eu/soer" target="_self" title="SOER 2015">SOER2015</a></li>
+                <li><a href="http://www.teebweb.org/" class="externalLink">TEEB study</a></li>
+                <li><a href="http://biodiversity.europa.eu/maes" class="internal-link" target="_self">MAES process</a></li>
+              </ul>
+            </div>
+          </article>
+
+        </main>
+      </div>
+      <div class="col-md-3 col-md-pull-9 col-lg-2 col-lg-pull-10">
+        <aside>
+          <nav class="nav nav-folder">
+            <h4 class="nav-title">Quick links</h4>
+            {% include folder_menu.html %}
+          </nav>
+        </aside>
+      </div>
+    </div>
+  </div>
+</div>

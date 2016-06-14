@@ -1,0 +1,47 @@
+<script>
+  (function() {
+    var bise = {};
+
+    bise.dom = {
+      'siteHeader': document.getElementById('site-header'),
+      'siteBody': document.getElementById('site-body'),
+      'navItems': document.getElementsByClassName('navmenu-body')
+    };
+    bise.fn = {};
+
+    window.bise = bise;
+  }())
+</script>
+<script src="{{ site.static }}/js/contrib/minigrid.min.js"></script>
+<script src="{{ site.static }}/js/navbar.js"></script>
+<script>
+  (function() {
+    $(window.bise.dom.siteHeader).append($('#navbar').clone().addClass('navbar-fixed'));
+    $('.navitem').each(function() {
+      console.log(window.width);
+      if (window.innerWidth >= 960) {
+        minigrid({
+          container: $(this).find('.navitem-submenu')[0],
+          item: '.submenu-group'
+        });
+      }
+    });
+
+  }())
+</script>
+{% unless page.page == 'homepage' %}
+  <!--
+  <script>
+    (function() {
+
+      if ( !(document.body.scrollTop || document.documentElement.scrollTop))
+        window.setTimeout(function() {
+          document.body.scrollTop = window.bise.fn.getScrollHeight();
+          document.documentElement.scrollTop = window.bise.fn.getScrollHeight();
+        }, 10);
+        
+    }())
+  </script>
+  -->
+{% endunless %}
+

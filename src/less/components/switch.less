@@ -1,0 +1,67 @@
+@switch-text: 3rem;
+@switch-disc: 1.4rem;
+@switch-width: (@switch-text + @switch-disc + .5);
+
+.switch {
+  input { .utils > .hide-input; }
+
+  cursor: pointer;
+  user-select: none;
+  display: inline-block;
+  width: @switch-width;
+  white-space: nowrap;
+  overflow: hidden;
+  border: @input-border-width solid @input-border;
+  border-radius: 1.5em;
+  word-spacing: 0;
+
+  .switch-true,
+  .switch-false,
+  .switch-disc {
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .switch-true,
+  .switch-false {
+    padding: @safe-padding;
+    width: 3rem;
+  }
+
+  .switch-true {
+    text-align: left;
+  }
+
+  .switch-false {
+    transition: margin-left .2s;
+    text-align: right;
+  }
+
+  .switch-disc {
+    .utils > .square(@switch-disc);
+    line-height: 1;
+    border-radius: 50%;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    .switch-disc {
+
+    }
+  }
+  
+  &.on {
+    .switch-false {
+      margin-left: -@switch-text;
+    }
+  }
+
+  &@{input-disabledClass} {
+    cursor: default;
+    border-color: @input-disabled-border;
+    background-color: @input-disabled-bg;
+  }
+
+}

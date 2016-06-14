@@ -1,0 +1,44 @@
+---
+layout: none
+---
+
+<div id="site">
+  <div id="site-body">
+    <div class="page">
+      <div class="page-body">
+        <main>
+
+
+            <h1>bise.prototype</h1>
+            <!-- <a href="http://eaudeweb.ro" rel="external">
+              <img src="{{ site.static }}/img/logo-edw.png" alt="Eau de Web"
+                   width="152" height="40">
+            </a> -->
+          
+          <p>This is a static prototype of the new BISE layout.</p>
+          <p>Use this page to navigate between the different layouts.</p>
+          <p>You can return here by clicking on the logo.</p>
+
+          <h5>Logo presentation</h5>
+          <p>
+            <a href="{{ site.baseurl }}/logo">in browser</a> | 
+            <a href="{{ site.baseurl }}/logo/bise-logo-presentation.pdf">as PDF</a>
+          </p>
+
+          <h5>Pages</h5>
+          <ol>
+            {% for page in site.pages %}
+              {% if page.page %}
+                <li>
+                  <a href="{{ page.url }}">{{ page.page }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ol>
+
+          
+        </main>
+      </div>
+    </div>
+  </div>
+</div>

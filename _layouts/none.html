@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html class="page-demo">
+<head>
+  {% include head.html %}
+</head>
+<body>
+  <script> document.body.style.opacity = '0'; </script>
+  {{ content }}
+  <script> document.body.style.opacity = '1'; </script>
+</body>
+</html>

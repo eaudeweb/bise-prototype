@@ -1,0 +1,41 @@
+@light-bg:                   #fff;
+@light-body:                 #666;
+@light-muted:                #999;
+@light-emphasis:             #333;
+@light-heading:              #333;
+
+@light-anchor:               #034ea2;
+@light-anchor-hover:         #1679d3;
+@light-anchor-visited:       #845299;
+
+@light-soft:                 #d8d8d8;
+@light-soft-fill:            #f2f2f2;
+@light-medium:               #ccc;
+@light-hard:                 #999999;
+
+@light-hr:                   @light-soft;
+@light-text-shadow:          none;
+
+@light-ink:                  #2000bc;
+@light-darker:               rgba(0,0,0,.4);
+@light-lighter:              rgba(255,255,255,.2);
+
+@light-input-color:          @input-color;
+@light-input-border:         @light-soft;
+@light-input-bg:             @input-bg;
+
+@light-input-error-border:   @input-error-border;
+@light-input-error-bg:       @input-error-bg;
+@light-input-error-color:    @input-error-color;
+
+@light-input-focus-border:   @color-orange;
+@light-input-focus-bg:       @input-focus-bg;
+@light-input-focus-color:    @color-orange;
+
+@light-input-success-border: @color-green;
+@light-input-success-bg:     @input-success-bg;
+@light-input-success-color:  @color-green;
+
+@light-input-disabled-border:@light-medium;
+@light-input-disabled-bg:    @light-medium;
+@light-input-disabled-color: @light-muted;

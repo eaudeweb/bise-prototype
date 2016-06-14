@@ -1,0 +1,20 @@
+.breadcrumbs {
+  .utils > .no-list;
+  font-family: @font-family;
+  li {
+    display: inline-block;
+    vertical-align: middle;
+    &::after {
+      content: "/";
+      color: @color-muted;
+    }
+    &:last-child {
+      &::after {
+        content: '';
+      }
+    }
+  }
+  a {
+    color: @color-green;
+  }
+}

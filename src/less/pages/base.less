@@ -1,0 +1,31 @@
+body {
+}
+.page-body {
+  padding: 2rem 0;
+  background-color: @color-bg;
+  @media @screen-md {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+#site-header {
+  .utils > .clear;
+  // .utils > .inner(top, @position: fixed);
+  z-index: @z-navbar;
+  background-color: #fff;
+  // box-shadow: 0 1px 3px fade(#000, 30%);
+}
+
+#site-body {
+  position: relative;
+}
+
+#site-footer {
+  // border-top: 1px solid @color-soft;
+  // box-shadow: 0 -1px 3px fade(#000, 30%);
+}
+
+.center {
+  .utils > .center;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html class="{{ page.page | prepend: 'page-' }}">
+<head>
+  {% include head.html %}
+</head>
+<body style="opacity: 0;">
+  <script> document.body.style.opacity = '0'; </script>
+
+  <div id="site">
+    <header id="site-header">
+      {% include header.html %}
+    </header>
+
+    <div id="site-body">
+      <div class="page">
+        {{ content }}
+      </div>
+    </div>
+    
+    <footer id="site-footer">
+      {% include footer.html %}
+    </footer>
+  </div>
+
+  {% include scripts.html %}
+  <script> document.body.style.opacity = '1'; </script>
+</body>
+</html>
