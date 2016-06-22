@@ -1,4 +1,19 @@
 .page-homepage {
+  .page-header {
+    border-bottom: solid @color-yellow;
+    @media @screen-md {
+      .row {
+        display: table;
+        table-layout: fixed;
+      }
+      .col-md-4,
+      .col-md-8 {
+        float: none;
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+  }
   .navitem-description {
     display: block;
   }
@@ -6,27 +21,18 @@
 
 #intro {
   padding: 2rem;
-  margin: -@card-padding;
-  margin-bottom: 0;
-  background-color: @color-blue;
-  color: #fff;
-  h1 {
-    color: inherit;
-  }
-  a {
-    color: @color-yellow;
-  }
+  padding-left: 0;
   &::after {
     content: '';
     display: table;
     clear: both;
   }
-}
-
-#highlights {
-  // margin-top: -3rem;
-  background-color: #fff;
-  border-bottom: 1px solid #eee;
+  
+  @media @screen-sm {
+    img {
+      margin-top: -5rem;
+    }
+  }
 }
 
 .section {
@@ -56,6 +62,39 @@
   }
 }
 
+.highlight {
+  display: block;
+  margin: 0 -@card-padding;
+  padding: @card-padding;
+  border-top: 1px solid @color-softer;
+  color: @color-body;
+  &:hover {
+    background-color: mix(@color-anchor, @color-softer, 5%);
+    color: @color-emphasis;
+  }
+  p {
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+}
+
+.highlight-thumbnail {
+  float: left;
+  margin-right: @rem-h;
+  img {
+    .utils > .size(6rem, 4.5rem);
+  }
+}
+.highlight-title {
+  margin-bottom: @leading-small;
+  color: @color-anchor;
+}
+#card-highlights {
+  padding: @card-padding;
+  padding-bottom: 0;
+  border-left: 1px solid @color-softer;
+}
+
 #card-flagship-products {
   padding: 2rem;
   background-color: @color-yellow;
@@ -72,59 +111,25 @@
   }
 }
 
+#interactive-presentation {
+  // margin: 0 -@card-padding;
+  // padding-left: @card-padding;
+  // padding-right: @card-padding;
+  // border-bottom: 1px solid @color-soft;
+  // overflow: hidden;
+  text-align: center;
+  
 
-#homepage-carousel {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  position: relative;
-  // border: 2px solid @color-soft;
-  // padding: @rem-x-large;
-  border-radius: @radius;
-  .slick-arrow {
-    .utils > .no-btn;
-    position: absolute;
-    top: 50%;
-    font-size: 2rem;
-    line-height: 1;
-    margin-top: -1rem;
-    .utils > .square(2rem);
-    overflow: hidden;
-    color: @color-soft;
-    &:hover,
-    &:focus {
-      color: @color-body;
-    }
-  }
+  padding: 2rem;
+  margin: -@card-padding;
+  margin-bottom: 0;
+  background-color: @color-blue;
+  color: #fff;
 
-  .slick-next {
-    left: 100%;
-    margin-left: .5rem;
-    &::before {
-      .icon;
-      content: @icon-navigate_next;
-    }
+  .section-title {
+    color: inherit;    
   }
-  .slick-prev {
-    right: 100%;
-    margin-right: .5rem;
-    &::before {
-      .icon;
-      content: @icon-navigate_before;
-    }
-  }
-
-  .slide {
-    margin: .5rem;
-    box-shadow: 0 1px 4px fade(#000, 25%);
-  }
-
-  .slide-media {
-    img {
-      .utils > .img-width;
-    }
-  }
-
-  .slide-body {
-    padding: @rem-x-xlarge;
+  a {
+    color: @color-yellow;
   }
 }

@@ -14,27 +14,25 @@
   position: fixed!important;
   padding: .5rem 0;
   box-shadow: 0 1px 4px fade(#000, 25%);
-  .navbar-descriptor,
-  .navbar-search-form {
+  .navbar-descriptor {
     display: none;
   }
   .navbar-header {
     display: block;
-    float: left;
     width: auto;
     margin-right: @rem-h-xxlarge;
   }
   .navbar-brand {
+    display: none;
+  }
+  .navbar-logo {
     display: block;
-    float: left;
-    margin-top: .4rem;
-    padding: 0;
-    .logo-big {
-      display: none;
-    }
-    .logo-small {
-      display: block;
-    }
+    height: 3rem;
+    margin: -1rem 0;
+    margin-right: 1rem;
+  }
+  .navbar-search {
+    float: right;
   }
   .navitem-description {
     display: none!important;
@@ -60,22 +58,11 @@
 }
 .navbar-brand {
   white-space: nowrap;
-  .logo-small {
-    display: none;
-  }
 }
 .navbar-logo,
 .navbar-title {
   display: inline-block;
   vertical-align: middle;
-}
-.navbar-logo {
-  picture,
-  .logo-big {
-    display: block;
-    height: 5rem;
-    width: auto;
-  }
 }
 .navbar-title {
   display: none;
@@ -213,6 +200,11 @@
     display: table-cell;
     vertical-align: middle;
     padding: (@navbar-gutter / 2) 0;
+  }
+  .navbar-logo {
+    position: relative;
+    top: -1rem;
+    margin-bottom: -2rem;
   }
   .navbar-descriptor {
     width: 100%;

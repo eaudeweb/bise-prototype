@@ -3,6 +3,65 @@ layout: base
 page: homepage
 ---
 
+  <div class="page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <section class="section" id="intro">
+            <header class="section-header">
+              <h1 class="section-title">EU Biodiversity Strategy to 2020</h1>
+            </header>
+
+            <img src="{{ site.static }}/img/img-living-well2.png"
+                 alt="Living well within the limits of our Planet"
+                 width="240" height="240"
+                 style="float: right">
+
+            <p class="large">BISE is contributing  to the improvement of the knowledge and evidence base for the European Union's environmental policy.</p>
+            <p>The protection, conservation and enhancement of the Union's natural capital is one of the 9 priority objectives of the <a href="">7th General Union Environment Action Programme to 2020</a>.</p>
+
+            <a href="" class="btn btn-yellow">Read the Action Programme to 2020</a>
+          </section>
+        </div>
+        <div class="col-md-4">
+          <div id="card-highlights">
+            <h4 class="card-title">BISE Highlights</h4>
+            <ul class="no-list no-leading">
+              <li>
+                <a href="" class="highlight">
+                  <div class="highlight-thumbnail">
+                    <img src="" alt="">
+                  </div>
+                  <h5 class="highlight-title">Towards the 2020 biodiversity targets</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, doloremque.</p>
+                </a>
+              </li>
+              <li>
+                <a href="" class="highlight">
+                  <div class="highlight-thumbnail">
+                    <img src="" alt="">
+                  </div>
+                  <h5 class="highlight-title">Mapping and Assessment of Ecosystems and their Services (MAES)</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, ipsum.</p>
+                </a>
+              </li>
+              <li>
+                <a href="" class="highlight">
+                  <div class="highlight-thumbnail">
+                    <img src="" alt="">
+                  </div>
+                  <h5 class="highlight-title">BISE - CHMs network of Europe</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, possimus.</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
   <div class="page-body">
     <div class="container">
 
@@ -11,48 +70,26 @@ page: homepage
 
           <main class="card">
 
-            <section class="section" id="intro">
-              <header class="section-header">
-                <h1 class="section-title">EU Biodiversity Strategy to 2020</h1>
-              </header>
-
-              <img src="{{ site.static }}/img/img-living-well.png"
-                   alt="Living well within the limits of our Planet"
-                   width="240" height="240"
-                   style="float: right">
-
-              <p class="large">BISE is contributing  to the improvement of the knowledge and evidence base for the European Union's environmental policy.</p>
-              <p>The protection, conservation and enhancement of the Union's natural capital is one of the 9 priority objectives of the <a href="">7th General Union Environment Action Programme to 2020</a>.</p>
-
-              <a href="" class="btn btn-yellow">Interactive presentation of the EU Biodiversity Strategy</a>
-            </section>
-
-            <section id="highlights" class="section">
+            <section id="interactive-presentation" class="section">
               
-                
                 <header class="section-header">
-                  <h2 class="section-title">BISE Highlights</h2>
+                  <h2 class="section-title">Interactive presentation of the EU Biodiversity Strategy</h2>
                 </header>
 
-                <div id="homepage-carousel" class="slick">
-                  {% for i in (1..4) %}
-                  <div>
-                    <div class="slide">
-                      <div class="slide-media">
-                        <img src="{{ site.static }}/img/img-highlight_{{ i }}.png">
-                      </div>
-                      <div class="slide-body">
-                        <h4>Title</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quam, voluptatum officia est magnam sequi odio neque fugit quibusdam vitae.</p>
-                      </div>
+                <div class="section-body">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam numquam officia aliquam incidunt, veniam ipsam voluptatum ex animi tempore voluptatem doloremque earum neque odit reiciendis hic ea praesentium tempora, molestias.</p>
                     </div>
-                    
+                    <div class="col-sm-6">
+                      <a href="">
+                        <img src="http://biodiversity.europa.eu/policy/progress-against-targets_small.png" alt="">
+                      </a>
+                    </div>
                   </div>
-                  {% endfor %}
+                </div>
 
-              </div>
-              <script src="{{ site.static }}/js/contrib/slick.min.js"></script>
-              <script> (function($) {$('.slick').slick(); }(jQuery)); </script>
+                
             </section>
 
             <section id="news" class="section">
@@ -144,7 +181,8 @@ page: homepage
 
         <div class="col-md-4">
           <aside>
-            <div class="card" id="card-flagship-products">
+            
+            <div class="card leading" id="card-flagship-products">
               
               <h4>Flagship products</h4>
 
