@@ -14,3 +14,4 @@ exclude:
   - 'Gruntfile.js'
   - 'src/'
   - 'node_modules/'
+  - 'grunt/'
