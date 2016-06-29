@@ -50,5 +50,30 @@
         padding-right: 0;
       }
     }
+  
+  
   }
 }
+
+@media (max-width: @breakpoint-sm) {
+  
+  .col-sm-6 .footer-logos img {
+  
+      display: none!important;
+    
+  }
+  
+}
+
+@media (min-width: @breakpoint-sm) {
+ 
+.col-sm-6 .footer-logos img {
+display:list-item;
+
+  }
+  .col-sm-6 .footer-logos span {
+    display:none;
+  } 
+
+}
+
