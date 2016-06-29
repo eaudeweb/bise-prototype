@@ -180,14 +180,6 @@
     padding: .25rem 0;
   }
 }
-
-.navbar-sm() {
-  .navbar-descriptor-copy,
-  .navbar-descriptor-cta {
-    display: inline;
-  }
-}
-
 .navbar-md() {
   .navbar-header {
     display: table;
@@ -388,6 +380,11 @@
   }
 }
 
-@media @screen-md-upto { .navbar-sm; }
+@media @screen-md-upto { 
+  .navbar-descriptor-copy,
+  .navbar-descriptor-cta {
+    display: inline;
+  }
+}
 @media @screen-md { .navbar-md; }
 @media @screen-lg { .navbar-lg; }
