@@ -18,8 +18,8 @@ module.exports = {
         separator: ';'
       },
       src: [
-        '<%= path.src %>/js/contrib/bootstrap.collapse.js',
-        '<%= path.src %>/js/alert.js'
+        // '<%= path.src %>/js/contrib/dropdown.js',
+        '<%= path.src %>/js/alert.js',
       ],
       dest: '<%= path.static %>/js/main.js',
     }
