@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   The Biodiversity Information System for Europe (BISE) is a single entry point for data and information on biodiversity supporting the implementation of the EU strategy and the Aichi targets in Europe.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://biodiversity.europa.eu"
-static: "./static"
+static: "static"
 
 # Build settings
 markdown: kramdown
