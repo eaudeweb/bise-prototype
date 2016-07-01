@@ -252,3 +252,72 @@
 
 // Grid
 @grid-gutter:                @gutter-large;
+
+
+// Icons
+
+@icomoon-font-path: "fonts";
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'bise-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'bise-icons';
+    src:
+        url('@{icomoon-font-path}/bise-icons.ttf?se41bq') format('truetype'),
+        url('@{icomoon-font-path}/bise-icons.woff?se41bq') format('woff'),
+        url('@{icomoon-font-path}/bise-icons.svg?se41bq#bise-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@icon-add: "\e145";
+@icon-arrow_drop_down: "\e5c5";
+@icon-arrow_drop_up: "\e5c7";
+@icon-attachment: "\e2bc";
+@icon-check: "\e5ca";
+@icon-close: "\e5cd";
+@icon-insert_invitation: "\e24f";
+@icon-radio: "\e061";
+@icon-link: "\e157";
+@icon-keyboard_arrow_down: "\e313";
+@icon-keyboard_arrow_left: "\e314";
+@icon-keyboard_arrow_right: "\e315";
+@icon-keyboard_arrow_up: "\e316";
+@icon-room: "\e8b4";
+@icon-menu: "\e5d2";
+@icon-person: "\e7fd";
+@icon-remove: "\e15b";
+@icon-search: "\e8b6";
+
+.icon-add::before { content: @icon-add; }
+.icon-arrow_drop_down::before { content: @icon-arrow_drop_down; }
+.icon-arrow_drop_up::before { content: @icon-arrow_drop_up; }
+.icon-attachment::before { content: @icon-attachment; }
+.icon-check::before { content: @icon-check; }
+.icon-close::before { content: @icon-close; }
+.icon-insert_invitation::before { content: @icon-insert_invitation; }
+.icon-radio::before { content: @icon-radio; }
+.icon-link::before { content: @icon-link; }
+.icon-keyboard_arrow_down::before { content: @icon-keyboard_arrow_down; }
+.icon-keyboard_arrow_left::before { content: @icon-keyboard_arrow_left; }
+.icon-keyboard_arrow_right::before { content: @icon-keyboard_arrow_right; }
+.icon-keyboard_arrow_up::before { content: @icon-keyboard_arrow_up; }
+.icon-room::before { content: @icon-room; }
+.icon-menu::before { content: @icon-menu; }
+.icon-person::before { content: @icon-person; }
+.icon-remove::before { content: @icon-remove; }
+.icon-search::before { content: @icon-search; }
