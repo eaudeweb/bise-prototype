@@ -1,87 +1,349 @@
 <nav id="navbar">
   <div class="container">
-    <div class="navbar-header">
-      <a href="{{ site.baseurl }}/" class="navbar-brand">
-        <span class="navbar-logo">
-          <!-- <picture>
-            <source srcset="{{ site.static }}/img/bise-logo-symbol.png"
-                    media="(max-width: 480px)">
-            <img src="{{ site.static }}/img/bise-logo-lockup-horizontal-large.png" alt="BISE Logo">
-          </picture> -->
-          <img src="http://biodiversity.europa.eu/BiseLogo.png" 
-               class="logo-big"
-               alt="BISE Logo"
-               >
 
-          <!-- <img src="{{ site.static }}/img/bise.png" alt="Logo" width="60" height="60"> -->
-        </span>
-        <span class="navbar-title">
-          Biodiversity Information<br> System for Europe
-        </span>
-      </a>
-      <div class="navbar-descriptor">
-        <div class="navbar-descriptor-inner">
-          <p class="navbar-descriptor-copy">{{ site.description }}</p>
-          <div class="navbar-descriptor-cta">
-            <a href="#">Learn More <strong>About BISE</strong></a>
-          </div>
-        </div>
-      </div>
-      <div class="navbar-search">
-        <form action="" class="navbar-search-form">
-          <input type="search" class="navbar-search-input" placeholder="Search BISE">
-          <button type="submit" class="navbar-search-submit">Search</button>
-        </form>
-      </div>
-      <!-- <div class="navbar-user"></div> -->
+
+    <!-- <div class="navbar-user"></div> -->
+  </div>
+
+
+
+
+  <div class="nav-container">
+    <div class="navmenu-head">
+      <span class="navmenu-head-logo">BISE</span> <span id="navmenu-open" class="navmenu-head-button" data-toggle="navmenu"
+        data-target="#navmenu-dropdown">Menu <i class="fa-angle-double-down" ></i></span>
+      <span id="navmenu-close" class="close" class="navmenu-head-button" data-toggle="navmenu" data-target="#navmenu-dropdown">Close <i class="fa-angle-double-down" ></i></span>
     </div>
 
 
 
 
-    <div class="nav-container">
-      <div class="navmenu-head">
-        <span class="navmenu-head-logo">BISE</span> <span class="navmenu-head-button" data-toggle="navmenu" data-target="#navmenu-dropdown" >Menu <i class="fa-angle-double-down" ></i></span>
-      </div>
-      <div id="navmenu-dropdown" class="navmenu-body" >
-        <nav class="nav-menu">
-          <ul>
-            <li class="submenu-item-wrapper">
-              <div class="submenu">
-                <div class="submenu-item">
-                  <a class="name">Topics</a>
-              
-               <i class="icon-arrow_drop_down" class="submenu-button" data-toggle="navmenu" data-target="#submenu-dropdown" ></i>
+    <div id="navmenu-dropdown" class="navmenu-body">
+      <nav class="nav-menu">
+        <ul>
+
+          <li class="submenu-item-wrapper">
+            <div class="submenu">
+              <div class="submenu-item">
+
+
+                <div class="navmenu-login-and-search">
+                  <dl class="actionMenu deactivated" id="portal-personaltools">
+
+                    <dt class="actionMenuHeader" class="submenu-button" data-toggle="navmenu" data-target=".actionMenuContent">
+                      <a id="user-name" href="#">Valentin Popescu</a>
+                    </dt>
+                    <dd class="actionMenuContent">
+                      <ul>
+                        <li id="personaltools-preferences">
+                          <a href="http://bise-portal.edw.ro/@@personal-preferences">Preferences</a>
+                        </li>
+                        <li id="personaltools-logout">
+                          <a href="http://bise-portal.edw.ro/logout">Log out</a>
+                        </li>
+                      </ul>
+                    </dd>
+
+                  </dl>
+
+
+                  <div class="navbar-search">
+                    <form action="" class="navbar-search-form">
+                      <input type="search" class="navbar-search-input" placeholder="Search BISE">
+                      <button type="submit" class="navbar-search-submit">Search</button>
+                    </form>
+                  </div>
+
+                </div>
+              </div>
+          </li>
+
+
+          <li class="submenu-item-wrapper">
+            <div class="submenu">
+              <div class="submenu-item">
+                <a class="name">Topics</a>
+
+                <i class="icon-arrow_drop_down" class="submenu-button" data-toggle="navmenu" data-target="#submenu-dropdown"></i>
+              </div>
+              <div id="submenu-dropdown" class="submenu-dr-wrapper">
+                <div class="submenu-dr">
+
+                  <div class="dr-item">
+                    <h6 class="title">
+                      SATUS
+                    </h6>
+                    <ul class="dr-list">
+                      <li class="dr-list-item">Ecosystem and habitats</li>
+                      <li class="dr-list-item">Species</li>
+                      <li class="dr-list-item">Genetic resources</li>
+                    </ul>
+                  </div>
+
+
+                  <div class="dr-item">
+                    <h6 class="title">
+                      THREATS
+                    </h6>
+                    <ul class="dr-list">
+                      <li class="dr-list-item">Climate change</li>
+                      <li class="dr-list-item">Invasive species</li>
+                      <li class="dr-list-item">Fragmentation</li>
+                      <li class="dr-list-item">Land use change</li>
+                      <li class="dr-list-item">Pollution</li>
+                      <li class="dr-list-item">Overexploitation</li>
+                    </ul>
+                  </div>
+                  <div class="dr-item">
+                    <h6 class="title">
+                      IMPACTS
+                    </h6>
+                    <ul class="dr-list">
+                      <li class="dr-list-item">Tipping points</li>
+                    </ul>
+                  </div>
+                  <div class="dr-item">
+                    <h6 class="title">
+                      BENEFITS
+                    </h6>
+                    <ul class="dr-list">
+                      <li class="dr-list-item">Ecosystem services</li>
+                    </ul>
+                  </div>
+                  <div class="dr-item">
+                    <h6 class="title">
+                      RESPONSES
+                    </h6>
+                    <ul class="dr-list">
+                      <li class="dr-list-item">Protected areas</li>
+                      <li class="dr-list-item">Green infrastructure</li>
+                      <li class="dr-list-item">LIFE+ Nature and Biodiversity Projects</li>
+                    </ul>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="submenu-item-wrapper">
+            <div class="submenu">
+              <div class="submenu-item">
+                <a class="name">Policy</a>
+
+                <i class="fa-angle-double-down" class="submenu-button" data-toggle="navmenu" data-target="#submenu-dropdown2"></i>
+              </div>
+              <div id="submenu-dropdown2" class="submenu-dr-wrapper">
+                <div class="submenu-dr">
+
+                  <div class="dr-item">
+                    <h6 class="title">
+                      EU BIODIVERSITY STRATEGY 2020
+                    </h6>
+                    <ul class="dr-list">
+                      <li class="dr-list-item">Global Aichi targets to 2020 (CBD)</li>
+                      <li class="dr-list-item">EU strategy to 2020 (EU Commission)</li>
+                      <li class="dr-list-item">EU targets and related Aichi targets</li>
+                      <li class="dr-list-item">EU indicators and related Aichi targets</li>
+                      <li class="dr-list-item">EU indicators and related EU targets</li>
+
+                    </ul>
+                  </div>
+
+
+
+
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+
+          <li class="submenu-item-wrapper">
+            <div class="submenu">
+              <div class="submenu-item">
+                <a class="name">Data</a>
+
+                <i class="fa-angle-double-down" class="submenu-button" data-toggle="navmenu" data-target="#submenu-dropdown3"></i>
+              </div>
+              <div id="submenu-dropdown3" class="submenu-dr-wrapper">
+                <div class="submenu-dr">
+
+                  <div class="dr-item">
+                    <h6 class="title">
+                      BIODIVERSITY DATA CENTRE (BDC)
+                    </h6>
+                    <ul class="dr-list">
+                      <li class="dr-list-item">BDC overview</li>
+                      <li class="dr-list-item">Species, habitats and sites (EUNIS)</li>
+                      <li class="dr-list-item">Indicators</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+          <li class="submenu-item-wrapper">
+            <div class="submenu">
+              <div class="submenu-item">
+                <a class="name">Knowledge</a>
+
+                <i class="fa-angle-double-down" class="submenu-button" data-toggle="navmenu" data-target="#submenu-dropdown4"></i>
+              </div>
+              <div id="submenu-dropdown4" class="submenu-dr-wrapper">
+                <div class="submenu-dr">
+
+                  <div class="dr-item">
+                    <h6 class="title">
+
+                    </h6>
+                    <ul class="dr-list">
+                      <li class="dr-list-item"></li>
+
+                    </ul>
+                  </div>
+
+
+
+
+
+
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+
+          <li class="submenu-item-wrapper">
+            <div class="submenu">
+              <div class="submenu-item">
+                <a class="name">Countries</a>
+
+                <i class="fa-angle-double-down" class="submenu-button" data-toggle="navmenu" data-target="#submenu-dropdown5"></i>
+              </div>
+              <div id="submenu-dropdown5" class="submenu-dr-wrapper">
+                <div class="submenu-dr">
+
+                  <div class="dr-item">
+                    <h6 class="title">
+                      EU BIODIVERSITY ACTION PLAN (BAP)
+                    </h6>
+                    <ul class="dr-list">
+                      <li class="dr-list-item">BAP 2010 Community report</li>
+                      <li class="dr-list-item">BAP 2010 comparative view</li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="submenu-item-wrapper">
+            <div class="submenu">
+              <div class="submenu-item">
+                <a class="name">Networks</a>
+
+                <i class="fa-angle-double-down" class="submenu-button" data-toggle="navmenu" data-target="#submenu-dropdown6"></i>
+              </div>
+              <div id="submenu-dropdown6" class="submenu-dr-wrapper">
+                <div class="submenu-dr">
+
+                  <div class="dr-item">
+                    <h6 class="title">
+                      BISE- CHMS NETWORK OF EUROPE
+                    </h6>
+                    <ul class="dr-list">
+                      <li class="dr-list-item">BISE - Clearing House Mechanism (CHM) network</li>
+                    </ul>
+                  </div>
+
+
+                  <div class="dr-item">
+                    <h6 class="title">
+                      NETWORK OF NGOS
+                    </h6>
+                    <ul class="dr-list">
+                      <li class="dr-list-item">European Habitats Forum</li>
+                    </ul>
+                  </div>
+                  <div class="dr-item">
+                    <h6 class="title">
+                      PUBLIC PARTICIPATION
+                    </h6>
+                    <ul class="dr-list">
+                      <li class="dr-list-item">Grassroots of Changes</li>
+                    </ul>
+                  </div>
+
+                  <div class="dr-item">
+                    <h6 class="title">
+                      EIONET
+                    </h6>
+                    <ul class="dr-list">
+                      <li class="dr-list-item">Forum - NRC Nature and biodiversity</li>
+                      <li class="dr-list-item">European Topic Centre on Biological Diversity</li>
+                    </ul>
+                  </div>
+
+                  <div class="dr-item">
+                    <h6 class="title">
+                      ASSESSMENTS CARRIED BY NGOS AND STAKEHOLDERS
+                    </h6>
+                    <ul class="dr-list">
+                      <li class="dr-list-item"> Half way there. Mid-term assessment of progress on the EU 2020 biodiversity strategy
+                      </li>
+                      <li class="dr-list-item"> Red list of Birds </li>
+                      <li class="dr-list-item"> Analysis on the Status of Implementation of the CBD
+                      </li>
+                      <li class="dr-list-item"> ICCAs and Aichi Targets </li>
+                      <li class="dr-list-item"> Progress towards Aichi targets (FoE Europe and CEEweb)
+                      </li>
+                      <li class="dr-list-item"> Safeguarding biological diversity (EPRS)
+                      </li>
+                    </ul>
+                  </div>
+
+
+
+
+
+                </div>
+              </div>
+            </div>
+          </li>
+
+
+
+
+
+
+          <li class="submenu-item-wrapper">
+            <div class="submenu">
+              <div id="submenu-item-about" class="submenu-item">
+                <a class="name">About</a>
+
+                <i class="fa-angle-double-down" class="submenu-button" " ></i>
   </div>
-                <div id="submenu-dropdown" class="submenu-dr-wrapper">
-                  <div class="submenu-dr">
+                <div id="submenu-dropdown7" class="submenu-dr-wrapper open " >
+                  <div class="submenu-dr ">
 
-                    <div class="dr-item">
-                      <h6 class="title">
-                        submenu-dr-title
-                      </h6>
-                      <ul class="dr-list">
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                      </ul>
-                    </div>
+    
 
-
-                    <div class="dr-item">
-                      <h6 class="title">
-                        submenu-dr-title
+                 
+                    <div class="dr-item ">
+                      
+                      <ul class="dr-list ">
+                        <li class="dr-list-item ">The Biodiversity Information System for Europe (BISE) is a single entry point for data and information on biodiversity supporting the implementation of the EU strategy and the Aichi targets in Europe.</li>
+                        <h6 class="title ">
+                        <button type="button" class="btn" class="dr-list-learnmore">Learn more about BISE</button>
                       </h6>
-                      <ul class="dr-list">
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                      </ul>
-                    </div>
-                    <div class="dr-item">
-                      <h6 class="title">
-                        submenu-dr-title
-                      </h6>
-                      <ul class="dr-list">
-                        <li class="dr-list-item">submenu-dropdop-item</li>
                       </ul>
                     </div>
 
@@ -93,250 +355,12 @@
             </li>
 
 
-            <li class="submenu-item-wrapper">
-              <div class="submenu">
-                <div class="submenu-item">
-                  <a class="name">Policy</a>
-              
-                <i class="fa-angle-double-down" class="submenu-button" data-toggle="navmenu" data-target="#submenu-dropdown2" ></i>
-  </div>
-                <div id="submenu-dropdown2" class="submenu-dr-wrapper">
-                  <div class="submenu-dr">
+<li class="submenu-item-wrapper ">
+<div class="submenu-contact ">
+              <div class="submenu ">
+                <div class="submenu-item ">
+                  <a href="# ">Contact us</a>
 
-                    <div class="dr-item">
-                      <h6 class="title">
-                        submenu-dr-title
-                      </h6>
-                      <ul class="dr-list">
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                      </ul>
-                    </div>
-
-
-                    <div class="dr-item">
-                      <h6 class="title">
-                        submenu-dr-title
-                      </h6>
-                      <ul class="dr-list">
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                      </ul>
-                    </div>
-                    <div class="dr-item">
-                      <h6 class="title">
-                        submenu-dr-title
-                      </h6>
-                      <ul class="dr-list">
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                      </ul>
-                    </div>
-
-
-
-                  </div>
-                </div>
-              </div>
-            </li>
-
-
-
- <li class="submenu-item-wrapper">
-              <div class="submenu">
-                <div class="submenu-item">
-                  <a class="name">Data</a>
-              
-                <i class="fa-angle-double-down" class="submenu-button" data-toggle="navmenu" data-target="#submenu-dropdown3" ></i>
-  </div>
-                <div id="submenu-dropdown3" class="submenu-dr-wrapper">
-                  <div class="submenu-dr">
-
-                    <div class="dr-item">
-                      <h6 class="title">
-                        submenu-dr-title
-                      </h6>
-                      <ul class="dr-list">
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                      </ul>
-                    </div>
-
-
-                    <div class="dr-item">
-                      <h6 class="title">
-                        submenu-dr-title
-                      </h6>
-                      <ul class="dr-list">
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                      </ul>
-                    </div>
-                    <div class="dr-item">
-                      <h6 class="title">
-                        submenu-dr-title
-                      </h6>
-                      <ul class="dr-list">
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                      </ul>
-                    </div>
-
-
-
-                  </div>
-                </div>
-              </div>
-            </li>
-
-
- <li class="submenu-item-wrapper">
-              <div class="submenu">
-                <div class="submenu-item">
-                  <a class="name">Knowledge</a>
-              
-                <i class="fa-angle-double-down" class="submenu-button" data-toggle="navmenu" data-target="#submenu-dropdown4" ></i>
-  </div>
-                <div id="submenu-dropdown4" class="submenu-dr-wrapper">
-                  <div class="submenu-dr">
-
-                    <div class="dr-item">
-                      <h6 class="title">
-                        submenu-dr-title
-                      </h6>
-                      <ul class="dr-list">
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                      </ul>
-                    </div>
-
-
-                    <div class="dr-item">
-                      <h6 class="title">
-                        submenu-dr-title
-                      </h6>
-                      <ul class="dr-list">
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                      </ul>
-                    </div>
-                    <div class="dr-item">
-                      <h6 class="title">
-                        submenu-dr-title
-                      </h6>
-                      <ul class="dr-list">
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                      </ul>
-                    </div>
-
-
-
-                  </div>
-                </div>
-              </div>
-            </li>
-
-
-
- <li class="submenu-item-wrapper">
-              <div class="submenu">
-                <div class="submenu-item">
-                  <a class="name">Countries</a>
-              
-                <i class="fa-angle-double-down" class="submenu-button" data-toggle="navmenu" data-target="#submenu-dropdown5" ></i>
-  </div>
-                <div id="submenu-dropdown5" class="submenu-dr-wrapper">
-                  <div class="submenu-dr">
-
-                    <div class="dr-item">
-                      <h6 class="title">
-                        submenu-dr-title
-                      </h6>
-                      <ul class="dr-list">
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                      </ul>
-                    </div>
-
-
-                    <div class="dr-item">
-                      <h6 class="title">
-                        submenu-dr-title
-                      </h6>
-                      <ul class="dr-list">
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                      </ul>
-                    </div>
-                    <div class="dr-item">
-                      <h6 class="title">
-                        submenu-dr-title
-                      </h6>
-                      <ul class="dr-list">
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                      </ul>
-                    </div>
-
-
-
-                  </div>
-                </div>
-              </div>
-            </li>
-
- <li class="submenu-item-wrapper">
-              <div class="submenu">
-                <div class="submenu-item">
-                  <a class="name">Networks</a>
-              
-                <i class="fa-angle-double-down" class="submenu-button" data-toggle="navmenu" data-target="#submenu-dropdown6" ></i>
-  </div>
-                <div id="submenu-dropdown6" class="submenu-dr-wrapper">
-                  <div class="submenu-dr">
-
-                    <div class="dr-item">
-                      <h6 class="title">
-                        submenu-dr-title
-                      </h6>
-                      <ul class="dr-list">
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                      </ul>
-                    </div>
-
-
-                    <div class="dr-item">
-                      <h6 class="title">
-                        submenu-dr-title
-                      </h6>
-                      <ul class="dr-list">
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                      </ul>
-                    </div>
-                    <div class="dr-item">
-                      <h6 class="title">
-                        submenu-dr-title
-                      </h6>
-                      <ul class="dr-list">
-                        <li class="dr-list-item">submenu-dropdop-item</li>
-                      </ul>
-                    </div>
-
-
-
-                  </div>
-                </div>
-              </div>
-            </li>
-
-
-
-<li class="submenu-item-wrapper">
-<div class="submenu-close">
-              <div class="submenu">
-                <div class="submenu-item">
-                  <a class="name">Close menu</a>
-              
-                <i class="fa-close" class="submenu-button" data-toggle="navmenu" data-target="#navmenu-dropdown" ></i>
   </div>
 
               </div>
