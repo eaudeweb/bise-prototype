@@ -2,7 +2,7 @@
   <div class="container">
 
 
-    <!-- <div class="navbar-user"></div> -->
+
   </div>
 
 
@@ -10,7 +10,10 @@
 
   <div class="nav-container">
     <div class="navmenu-head">
-      <span class="navmenu-head-logo">BISE</span> <span id="navmenu-open" class="navmenu-head-button" data-toggle="navmenu"
+       <img src="http://biodiversity.europa.eu/BiseLogo.png" 
+               class="logo-big"
+               alt="BISE Logo"
+               >  <span class="navmenu-head-logo">BISE</span> <span id="navmenu-open" class="navmenu-head-button" data-toggle="navmenu"
         data-target="#navmenu-dropdown">Menu <i class="fa-angle-double-down" ></i></span>
       <span id="navmenu-close" class="close" class="navmenu-head-button" data-toggle="navmenu" data-target="#navmenu-dropdown">Close <i class="fa-angle-double-down" ></i></span>
     </div>
@@ -19,44 +22,36 @@
 
 
     <div id="navmenu-dropdown" class="navmenu-body">
+      <div class="search-and-login">
+                <dl class="actionMenu deactivated" id="portal-personaltools">
+                  <dt class="actionMenuHeader" data-toggle="navmenu" data-target="#login-data">
+                    <a id="user-name" href="#">Valentin Popescu</a>
+                  </dt>
+                  <dd id="login-data" class="actionMenuContent">
+                    <ul>
+                      <li id="personaltools-preferences">
+                        <a href="http://bise-portal.edw.ro/@@personal-preferences">Preferences</a>
+                      </li>
+                      <li id="personaltools-logout">
+                        <a href="http://bise-portal.edw.ro/logout">Log out</a>
+                      </li>
+                    </ul>
+                  </dd>
+                </dl>
+                <div class="search-wrapper">
+                  <div class="search-form">
+                    <div class="search">
+                      <input type="text" id="input-search"/>
+                    <span> <button>Search</button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
       <nav class="nav-menu">
         <ul>
 
-          <li class="submenu-item-wrapper">
-            <div class="submenu">
-              <div class="submenu-item">
-
-
-                <div class="navmenu-login-and-search">
-                  <dl class="actionMenu deactivated" id="portal-personaltools">
-
-                    <dt class="actionMenuHeader" class="submenu-button" data-toggle="navmenu" data-target=".actionMenuContent">
-                      <a id="user-name" href="#">Valentin Popescu</a>
-                    </dt>
-                    <dd class="actionMenuContent">
-                      <ul>
-                        <li id="personaltools-preferences">
-                          <a href="http://bise-portal.edw.ro/@@personal-preferences">Preferences</a>
-                        </li>
-                        <li id="personaltools-logout">
-                          <a href="http://bise-portal.edw.ro/logout">Log out</a>
-                        </li>
-                      </ul>
-                    </dd>
-
-                  </dl>
-
-
-                  <div class="navbar-search">
-                    <form action="" class="navbar-search-form">
-                      <input type="search" class="navbar-search-input" placeholder="Search BISE">
-                      <button type="submit" class="navbar-search-submit">Search</button>
-                    </form>
-                  </div>
-
-                </div>
-              </div>
-          </li>
+         
 
 
           <li class="submenu-item-wrapper">
